@@ -1,3 +1,9 @@
+* {
+  margin:0;
+  padding: 0;
+  border:2px solid black;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,9 +32,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  place-content: center;
 }
 
 h1 {
@@ -57,7 +63,8 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  padding: em;
+
 }
 
 .read-the-docs {
@@ -82,6 +89,88 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/**********************************/
+
+.menu-header {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background:url(/public/assets/iteration-1/home-banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cover-title {
+  width:100%;
+  height: 5%;
+  margin: 15% auto 5%;
+  background: url("public/assets/iteration-1/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.menu-header p {
+  color: white;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight:200;
+  margin:0;
+}
+
+#aciktim-btn {
+  width: 50%;
+  background-color: #FDC913;
+  text-transform: uppercase;
+  border-radius: 20px;
+  align-self: center;
+  margin: 5%;
+}
+
+#cover-img {
+  height:100%;
+  width: 100%;
+  background-size: 0%;
+  object-fit:none;
+  object-position: 50% 70%;
+}
+
+.menu-icon {
+  width: 40%;
+  margin: 1.5rem auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 0.2rem auto;
+  width: 40%;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.icon p {
+  text-transform: capitalize;
+  align-content: center;
+  font-size: 0.7rem;
+  font-weight:900;
+}
+
+.icon span {
+  text-transform: uppercase;
+}
+
+.card{
+
+}
+
+/**********************************/
 
 @media (prefers-color-scheme: light) {
   :root {
